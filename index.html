@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bmi.js"></script>
 </head>
+
 <body>
-    <div class="header">
-        <div class="name">Rahul Sharma</div>
+    <div class="main">
+        <h1>BMI Calculator</h1>
+        <form>
+            <div class="row">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required><br>
+            </div>
+            <div class="row">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required><br>
+            </div>
+            <button type="submit" onclick="event.preventDefault(); calc();">Calculate</button>
+        </form>
+        <span>Result : </span>
+        <p id="result"> </p>
     </div>
-    <div cla¬ss="main">
-        <div class="about">
-            <p class="intro">Hello, I am Rahul Sharma</p><br>
-            <p class="designation">Web Developer</p> <br>
-            <p class="bio">Passionate Web developer with expertise in Java, Python, and database management. Experienced in building scalable <br>
-            web applications and AI-powered solutions. Looking for opportunities to contribute innovative tech solutions.</p><br><br>
-            <button>View More</button>
-        </div>
-        <div class="links">
-            <a href=""><i class="fa fa-facebook-f" style="font-size:18px;color:white"></i></a>
-            <a href="https://github.com/rahulsharmaaaaaaa" target="_blank"><i class="fa fa-github" style="font-size:20px;color:white"></i></a>
-            <a href="https://www.linkedin.com/in/rahulsharma2502/" target="_blank"><i class="fa fa-linkedin" style="font-size:20px;color:white"></i></a>
-            <a href=""><i class="fa fa-instagram" style="font-size:20px;color:white"></i></a>
-        </div>
-    </div>
+
 </body>
+
 </html>

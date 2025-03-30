@@ -1,59 +1,57 @@
 *{
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
-body{
-    background-image: url("background img.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
-}
-.header{
-    height: 70px;
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.522);
-}
-.name{
-    color: white;
-    font-size: 30px;
-    margin-left: 4%;
-    font-family:'Times New Roman', Times, serif;
-    letter-spacing:0.2cm;
-    font-weight: bolder;
-}
 .main{
-    height: 100%;
-    display: flex;
+    width: 30vw;
+    height: 70vh;
+    display:flexbox;
+    border: 2px solid black;
+    box-shadow: 5px 10px 18px #888888;
+    margin: 8% 35%;
+    text-align: center;
 }
-.about{
-    margin: 10% 10% 4% 8%;
-    display: block;
-}
-.intro{
-    color: white ;
-    word-spacing:0.1cm;
-    font-size: 20px;
-}
-.designation{
-    color: goldenrod;
-    font-size: 60px;
-}
-.bio{
-    color: white;
-    font-size: 17px;
-    font-family:Georgia, 'Times New Roman', Times, serif;  
-}
-button{
-    background-color: goldenrod;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    font-size: 20px;
+.main h1{
+    font-size: 40px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bolder;
+    text-decoration:underline;
+    margin-bottom: 70px;
 }
-.links{
-    margin: 0% 10% 4% 8%;
+.main label{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    float: left;
 }
-.links a{
-    padding-right: 5%;
+
+.main input{
+ float: right;
+ width: 200px;
+ height: 25px;
+ 
+}
+.row{
+    padding: 5% 10%;
+}
+.main button{
+    width: 160px;
+    height: 35px;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.main span{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+        
+}
+.main span p{
+    font-size: 20px;
+    font-weight: 500;
 }
